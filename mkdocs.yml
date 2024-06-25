@@ -1,0 +1,278 @@
+# Project information
+site_name: 古零答疑
+site_url: https://gu0.io
+site_author: GU0
+site_description: >-
+  Write your documentation in Markdown and create a professional static site in
+  minutes – searchable, customizable, in 60+ languages, for all devices
+
+# Repository
+#repo_name: gu0qa/qa
+#repo_url: https://github.com/gu0qa/qa
+
+# Copyright
+copyright: Copyright &copy; 2024 古零答疑
+
+extra_javascript:
+  - 'https://code.jquery.com/jquery-3.5.1.slim.min.js'
+  - 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js'
+  - 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'
+
+extra_css:
+  # - 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'
+  - 'css/custom.css'  # 可选项，用于添加自定义CSS
+
+# Configuration
+theme:
+  name: material
+  #custom_dir: theme
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  language: 'zh'
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - django
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+not_in_nav: |
+  /tutorials/**/*.md
+
+
+# Page tree
+nav:
+  - 答疑文章: 
+    - answering-question/index.md
+    - 1、2024年答疑: 
+      - 2024-03-06: qa/index.md
+      - 2024-03-05: qa/index.md
+      - 2024-03-04: qa/index.md
+    - 2、2023年答疑: 
+      - 2024-03-06: qa/index.md
+    - 3、2022年答疑: 
+      - 2024-03-06: qa/index.md
+  
+  - 意识强度提升点实操指南:
+    - practical-guide-to-enhancing-consciousness-intensity/index.md
+    - 【1】中央区：心智控制区: practical-guide-to-enhancing-consciousness-intensity/01/index.md
+    - 【2】上方区：自主意识区: practical-guide-to-enhancing-consciousness-intensity/02/index.md
+    - 【3】下方区：神性连接区: practical-guide-to-enhancing-consciousness-intensity/03/index.md
+    - 【4】右方区：思维扩展区: practical-guide-to-enhancing-consciousness-intensity/04/index.md
+    - 【5】左方区：旧有惯性区: practical-guide-to-enhancing-consciousness-intensity/05/index.md
+    - 【6】左上区：神经联络区: practical-guide-to-enhancing-consciousness-intensity/06/index.md
+    - 【7】左下区：神性交换区: practical-guide-to-enhancing-consciousness-intensity/07/index.md
+    - 【8】右上区：灵性结构区: practical-guide-to-enhancing-consciousness-intensity/08/index.md
+    - 【9】右下区：模块交换区: practical-guide-to-enhancing-consciousness-intensity/09/index.md
+  - 矩阵脱离指南:
+    - matrix-detachment-guide/index.md
+    - Why sponsor us: insiders/why-sponsor-us.md
+    - What's in it for you: insiders/benefits.md
+    - Who is sponsoring: insiders/our-sponsors.md
+    - Sponsoring tiers: insiders/sponsoring-tiers.md
+    - How to sponsor: insiders/how-to-sponsor.md
+    - Additional information:
+      - Payment and billing: insiders/payment-and-billing.md
+      - Access management: insiders/access-management.md
+      - Runtime and cancellation: insiders/runtime-and-cancellation.md
+      - Privacy: insiders/privacy.md
+      - License: insiders/license.md
+      - Support: support.md
+    - Using Insiders:
+      - Getting started: insiders/getting-started.md
+    - Changelog:
+      - insiders/changelog/index.md
+      - How to upgrade: insiders/upgrade.md
+  - 潜意识催眠培训:
+    - subconscious-hypnosis-training/index.md
+  - 学员投稿:
+    - student-submissions/index.md
+    - Installation: getting-started.md
+    - Creating your site: creating-your-site.md
+    - Publishing your site: publishing-your-site.md
+    - Customization: customization.md
+    - Conventions: conventions.md
+    - Browser support: browser-support.md
+    - Enterprise feedback: enterprise-support.md
+    - Philosophy: philosophy.md
+    - Alternatives: alternatives.md
+    - License: license.md
+    - Tutorials:
+      - tutorials/index.md
+      - "Blogs":
+        - tutorials/blogs/basic.md
+        - tutorials/blogs/navigation.md
+        - tutorials/blogs/engage.md
+      - "Social cards":
+        - tutorials/social/basic.md
+        - tutorials/social/custom.md
+    - Changelog:
+      - changelog/index.md
+      - How to upgrade: upgrade.md
+  - 电影推荐:
+    - movie-recommendations/index.md
+    - 1、表意识和潜意识关系的探索:
+      - ▪️ 入侵脑细胞 (The Cell): movie-recommendations/01/001.md
+    - 2、精分的探索:
+      - ▪️ 致命ID (Identity):  movie-recommendations/02/001.md
+      - ▪️ 无双 (Project Gutenberg): movie-recommendations/02/002.md
+      - ▪️ 暴风雨:  movie-recommendations/02/003.md
+    - 3、潜意识及复合体能的探索: 
+      - ▪️ 超感猎杀: movie-recommendations/03/001.md
+    - 4、觉醒意识的探索: 
+      - ▪️ 楚门的世界: movie-recommendations/04/001.md
+      - ▪️ 肖申克的救赎: movie-recommendations/04/002.md
+      - ▪️ 永无止境: movie-recommendations/04/003.md
+      - ▪️ 失控玩家: movie-recommendations/04/004.md
+      - ▪️ 瑞克和莫蒂: movie-recommendations/04/005.md
+    - 5、轮回系统和催眠植入的探索: 
+      - ▪️ 命运规划局: movie-recommendations/05/001.md
+      - ▪️ 美梦成真: movie-recommendations/05/002.md
+      - ▪️ 爱与罪: movie-recommendations/05/003.md
+      - ▪️ 仲夏夜惊魂: movie-recommendations/05/004.md
+      - ▪️ 哪吒: movie-recommendations/05/005.md
+      - ▪️ 天才枪手: movie-recommendations/05/006.md
+      - ▪️ 黑客帝国: movie-recommendations/05/007.md
+      - ▪️ 西部世界: movie-recommendations/05/008.md
+      - ▪️ 移魂都市: movie-recommendations/05/009.md
+      - ▪️ 异次元骇客: movie-recommendations/05/010.md
+      - ▪️ 分歧者: movie-recommendations/05/011.md
+      - ▪️ 云图: movie-recommendations/05/012.md
+      - ▪️ 心灵奇旅: movie-recommendations/05/013.md
+    - 6、维度时间线和潜意识探索: 
+      - ▪️ 变焦: movie-recommendations/06/001.md
+      - ▪️ 黑镜第六季: movie-recommendations/06/1-002.md
+      - ▪️ 无姓之人: movie-recommendations/06/1-003.md
+      - ▪️ 边缘世界: movie-recommendations/06/1-004.md
+    - 7、执念的探索: 
+      - ▪️ 非我: movie-recommendations/07/001.md
+      - ▪️ 狩猎: movie-recommendations/07/002.md
+      - ▪️ 恐怖游轮: movie-recommendations/07/003.md
+    - 8、出神探索: 
+      - ▪️ 灵异空间: movie-recommendations/08/001.md
+      - ▪️ 意识强殖: movie-recommendations/08/002.md
+      - ▪️ 幽冥: movie-recommendations/08/003.md
+      - ▪️ 遁入虚无: movie-recommendations/08/004.md
+    - 9、清醒梦的探索: 
+      - ▪️ 异界: movie-recommendations/09/001.md
+      - ▪️ 记忆提取: movie-recommendations/09/002.md
+      - ▪️ 幻梦空间: movie-recommendations/09/003.md
+      - ▪️ 红辣椒: movie-recommendations/09/004.md
+      - ▪️ 盗梦空间: movie-recommendations/09/005.md
+      - ▪️ 梦魇之旅: movie-recommendations/09/006.md
+      - ▪️ 超级的我: movie-recommendations/09/007.md
+    - 10、观电影法的探索: 
+      - ▪️ 买凶拍人: movie-recommendations/10/001.md
+      - ▪️ 特殊演员: movie-recommendations/10/002.md
+      - ▪️ 好莱坞俗套大吐槽: movie-recommendations/10/003.md
+    - 11、破恐惧幻的探索: 
+      - ▪️ 惊声尖笑: movie-recommendations/11/001.md
+      - ▪️ 摄影机不要停: movie-recommendations/11/002.md
+      - ▪️ 林中小屋: movie-recommendations/11/003.md
+    - 12、合一本源的探索: 
+      - ▪️ 超体: movie-recommendations/12/001.md
+      - ▪️ 瞬息全宇宙: movie-recommendations/12/002.md
+      - ▪️ 宇宙之旅: movie-recommendations/12/003.md
+      - ▪️ 轮回: movie-recommendations/12/004.md
+      - ▪️ 天地玄黄: movie-recommendations/12/005.md
+    - 13、自强自爱的探索: 
+      - ▪️ 死亡诗社: movie-recommendations/12/001.md
+      - ▪️ 跳出我天地: movie-recommendations/12/002.md
+      - ▪️ 心灵捕手: movie-recommendations/12/003.md
+      - ▪️ 奔腾年代: movie-recommendations/12/004.md
+      - ▪️ 当幸福来敲门: movie-recommendations/12/005.md
+      - ▪️ 坚强Stonger: movie-recommendations/12/006.md
+    - 14、反PUA的探索: 
+      - ▪️ 雷恩菲尔德: movie-recommendations/12/001.md
