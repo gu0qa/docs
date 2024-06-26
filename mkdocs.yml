@@ -74,11 +74,11 @@ theme:
   hljs_languages:
     - yaml
     - django
-  favicon: assets/favicon.png
-  icon:
-    logo: logo
+  favicon: 'assets/favicon.ico'
+  # logo: 'assets/logo.png'
 
 plugins:
+  - search
   - glightbox
   
 # Extensions
