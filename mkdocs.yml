@@ -78,6 +78,9 @@ theme:
   icon:
     logo: logo
 
+plugins:
+  - glightbox
+  
 # Extensions
 markdown_extensions:
   - abbr
@@ -136,14 +139,13 @@ not_in_nav: |
 nav:
   - 答疑文章: 
     - answering-question/index.md
-    - 1、2024年答疑: 
-      - 2024-03-06: qa/index.md
-      - 2024-03-05: qa/index.md
-      - 2024-03-04: qa/index.md
-    - 2、2023年答疑: 
-      - 2024-03-06: qa/index.md
-    - 3、2022年答疑: 
-      - 2024-03-06: qa/index.md
+    - 2024年答疑: 
+      - 6月25日: 
+        - answering-question/2024/0625/index.md
+    - 2023年答疑: 
+      - 1月8日: qa/index.md
+    - 2022年答疑: 
+      - 11月4日: qa/index.md
   
   - 意识强度提升点实操指南:
     - practical-guide-to-enhancing-consciousness-intensity/index.md
@@ -157,50 +159,58 @@ nav:
     - 【8】右上区：灵性结构区: practical-guide-to-enhancing-consciousness-intensity/08/index.md
     - 【9】右下区：模块交换区: practical-guide-to-enhancing-consciousness-intensity/09/index.md
   - 矩阵脱离指南:
-    - matrix-detachment-guide/index.md
-    - Why sponsor us: insiders/why-sponsor-us.md
-    - What's in it for you: insiders/benefits.md
-    - Who is sponsoring: insiders/our-sponsors.md
-    - Sponsoring tiers: insiders/sponsoring-tiers.md
-    - How to sponsor: insiders/how-to-sponsor.md
-    - Additional information:
-      - Payment and billing: insiders/payment-and-billing.md
-      - Access management: insiders/access-management.md
-      - Runtime and cancellation: insiders/runtime-and-cancellation.md
-      - Privacy: insiders/privacy.md
-      - License: insiders/license.md
-      - Support: support.md
-    - Using Insiders:
-      - Getting started: insiders/getting-started.md
-    - Changelog:
-      - insiders/changelog/index.md
-      - How to upgrade: insiders/upgrade.md
+    - 意识强度: 
+        - matrix-detachment-guide/index.md
+    - 盗梦玩家: 
+        - matrix-detachment-guide/index.md
+    - 沉寂小我: 
+        - matrix-detachment-guide/index.md
+    - 化解攻击:
+        - matrix-detachment-guide/index.md
+    - 古零脱敏: 
+        - matrix-detachment-guide/index.md
+
   - 潜意识催眠培训:
     - subconscious-hypnosis-training/index.md
+    - 初级班 👽 :
+      - 第 8 期: 
+        - subconscious-hypnosis-training/index.md
+      - 第 7 期: 
+        - subconscious-hypnosis-training/index.md
+      - 第 6 期:
+        - subconscious-hypnosis-training/index.md
+      - 第 5 期:
+        - subconscious-hypnosis-training/index.md
+      - 第 4 期:
+        - subconscious-hypnosis-training/index.md
+      - 第 3 期:
+        - subconscious-hypnosis-training/index.md
+      - 第 2 期:
+        - subconscious-hypnosis-training/index.md
+      - 第 1 期:
+        - subconscious-hypnosis-training/index.md
+    - 中级班 👽 :
+      - 第 2 期: 
+        - subconscious-hypnosis-training/index.md
+      - 第 1 期: 
+        - subconscious-hypnosis-training/index.md
+    - 高级班 👽 :
+      - 第 1 期: 
+        - subconscious-hypnosis-training/index.md
   - 学员投稿:
     - student-submissions/index.md
-    - Installation: getting-started.md
-    - Creating your site: creating-your-site.md
-    - Publishing your site: publishing-your-site.md
-    - Customization: customization.md
-    - Conventions: conventions.md
-    - Browser support: browser-support.md
-    - Enterprise feedback: enterprise-support.md
-    - Philosophy: philosophy.md
-    - Alternatives: alternatives.md
-    - License: license.md
-    - Tutorials:
-      - tutorials/index.md
-      - "Blogs":
-        - tutorials/blogs/basic.md
-        - tutorials/blogs/navigation.md
-        - tutorials/blogs/engage.md
-      - "Social cards":
-        - tutorials/social/basic.md
-        - tutorials/social/custom.md
-    - Changelog:
-      - changelog/index.md
-      - How to upgrade: upgrade.md
+    - 2024年: 
+        - student-submissions/2024/index.md
+    - 2023年:
+        - student-submissions/2023/index.md
+        - "∞【古零潜催】优秀潜催案例-不安全感的脱敏破幻（附古零点评）": ./student-submissions/2023/0720/index.md
+        - "∞ 古零潜意识催眠-外灵干扰2": ./student-submissions/2023/0710/index.md
+        - "∞【古零潜催】中级班 & 学员暗催案例（附古零点评）": ./student-submissions/2023/0705/index.md
+        - "∞【古零潜催】学员投稿-如何团结起来集体觉醒；集体大金蛋与个人大金蛋如何互动（附古零点评）": ./student-submissions/2023/0609/index.md
+        - "∞【古零潜催】学员互催信息-潜催集体防御系统给大家的话（附古零点评）": ./student-submissions/2023/0608/index.md
+        - "∞【古零潜催】学员投稿：近百场互催阶段性总结（附古零点评）": ./student-submissions/2023/0511/index.md
+        - "∞【古零潜催】学员投稿：破黑屏——见宇宙": ./student-submissions/2023/0504/index.md
+
   - 电影推荐:
     - movie-recommendations/index.md
     - 1、表意识和潜意识关系的探索:
